@@ -1,6 +1,21 @@
 import Header from "./components/header";
 
 export default function Home() {
+  const courses = [
+    { course: "Pw Neet Coupon code", discount: "", link: "" },
+    { course: "PW JEE Coupon code", discount: "", link: "" },
+    { course: "PW UPSC COURSE", discount: "", link: "" },
+    { course: "PW GATE COURSE", link: "", discount: "" },
+    { course: "IIT JAM Course", link: "", discount: "" },
+    { course: "Commerce Courses", link: "", discount: "" },
+    { course: "CAT Course", link: "", discount: "" },
+    { course: "MBA Entrance Course", link: "", discount: "" },
+    { course: "CSIR NET Course", link: "", discount: "" },
+    { course: "CLAT Course", link: "", discount: "" },
+    { course: "CA Intermediate Course", link: "", discount: "" },
+    { course: "School Courses", link: "", discount: "" },
+    { course: "Other Course", link: "", discount: "" },
+  ];
   return (
     <main className="flex min-h-screen flex-col items-center p-12 bg-white">
       <h2 className="text-5xl leading-7 text-gray-900 ">
@@ -29,11 +44,15 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
+            {courses.map((course) => {
+              return (
+                <tr key={Math.random()}>
+                  <td>{course.course}</td>
+                  <td>{course.discount}</td>
+                  <td>{course.link}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
