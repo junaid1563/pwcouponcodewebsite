@@ -19,6 +19,7 @@ import {
   PhoneIcon,
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
+import { WHATSAPP_API } from "../config/constants";
 
 export default function Header() {
   return (
@@ -38,14 +39,18 @@ export default function Header() {
         </div>
 
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="/faq" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
             FAQ
           </a>
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Youtube
+            Enroll
           </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            About Us
+          <a
+            href={WHATSAPP_API + `How are you?`}
+            target="_blank"
+            className="text-sm font-semibold leading-6 text-gray-900"
+          >
+            Get in Touch
           </a>
         </PopoverGroup>
       </nav>

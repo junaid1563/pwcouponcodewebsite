@@ -36,20 +36,60 @@ table,
 th,
 td {
   border: 1px solid black;
+
   border-collapse: collapse;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-table{
+table {
   min-width: 80vw;
+  min-height: 100vh;
   text-align: center;
 }
 
-th{
-  background-color: rgb(165, 154, 0);
+th {
+  background-color: rgb(5, 86, 235);
   color: white;
 }
 
-td{
-  background-color: rgb(255, 246, 164);
+td {
+  min-height: 40vh;
+}
+tr {
+  background-color: white;
+  min-height: 40px;
+}
+
+tr:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+button {
+  
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(
+    0deg,
+    rgba(20, 167, 62, 1) 0%,
+    rgba(102, 247, 113, 1) 100%
+  );
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
 }
