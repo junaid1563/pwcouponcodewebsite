@@ -16,6 +16,8 @@ export default function Home() {
     { course: "School Courses", link: "", discount: "" },
     { course: "Other Course", link: "", discount: "" },
   ];
+  const whatsappApi =
+    "https://api.whatsapp.com/send?phone=<mobilenumber>&text=Hello";
   return (
     <main className="flex min-h-screen flex-col items-center p-12 bg-white">
       <h2 className="text-5xl leading-7 text-gray-900 ">
